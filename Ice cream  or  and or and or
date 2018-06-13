@@ -1,0 +1,42 @@
+Udacity-Quiz-Ice-Cream-3-6
+//first attempt but it was not would not take it  
+
+var flavor = "vanilla";
+var vessel = "bowl";
+var toppings = "sprinkles";
+
+var f1 = false;
+var v1 = false;
+var t1 = false;
+
+var message = "I'd like two scoops of "+flavor+ " ice cream in a "+vessel+" with "+toppings+".";
+
+// Add your code here
+if (flavor === "vanilla" || flavor === "chocolate"){
+    f1 = true ;
+}
+if (vessel === "cone" || vessel === "bowl"){
+    v1 = true ;
+}
+if (toppings === "sprinkles" || vessel === "peanuts"){
+    t1 = true ;
+}
+
+if (f1 === true && v1 === true && t1 === true){
+    console.log(message);
+}
+
+// second attempt  seems to be wating to create a single loooong  funtion 
+
+var flavor = "vanilla";
+var vessel = "bowl";
+var toppings = "peanuts";
+
+
+if ( ((flavor === "vanilla") || (flavor === "chocolate")) && 
+    ((vessel === "cone") || (vessel === "bowl")) && 
+        ((toppings === "sprinkles") || (toppings ==="peanuts")) ){
+    console.log("I'd like two scoops of "+flavor+ "ice cream in a "+vessel+"with "+toppings+".");
+}
+
+// i think they want us to learn how to make "or and or and or" and semicolon structure.
